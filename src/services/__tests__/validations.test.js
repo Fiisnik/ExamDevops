@@ -26,3 +26,11 @@ describe("test lenght > 8", () => {
         expect(result).toBe(true);
     });
 });
+
+describe("test lenght > 8", () => {
+    test("should return true as the gamertag is more than 8 char with special char and number", () => {
+        var gamerTagValue = 'Salutatoi8*'
+        const result = checkGamerTag(gamerTagValue);
+        expect(result).toBe(true);
+    });
+});
